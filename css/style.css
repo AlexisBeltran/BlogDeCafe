@@ -1,0 +1,134 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --primario: #784D3C;
+    --blanco: #fff;
+    --gris: #e1e1e1;
+    --negro: #000;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+/** GLOABLES **/
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4{
+    font-family: var(--fuenteHeading);
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+.boton{
+    display: block;
+    text-align: center;
+    padding: 1rem 3rem;
+    color: var(--blanco);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+} 
+.boton--primario{
+    background-color: var(--negro);
+}
+@media (min-width: 768px){
+    .boton{
+        display: inline-block;
+    }
+}
+/** HEADER **/
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.header_texto{
+    color: var(--blanco);
+    margin-top: 5rem;
+}
+/** BARRA **/
+
+@media (min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+    }
+    .header_texto{
+        margin-top: 15rem;
+    }
+}
+.logo{
+    color: var(--blanco);
+}
+.logo_nombre{
+    font-weight: 400;
+}
+.logo_bold{
+    font-weight: 700;
+}
+.navegacion a{
+    text-align: center;
+    display: block;
+    color: var(--blanco);
+    font-size: 1.8rem;
+}
+@media (min-width: 768px){
+    .contenedor-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 3rem;
+    }
+}
+.entrada{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.entrada:last-child{
+    border: none;
+    margin: 0;
+}
+.entrada-imagen img{
+    width: 100%;
+    max-width: 100%;
+}
