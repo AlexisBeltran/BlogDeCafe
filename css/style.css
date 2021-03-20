@@ -64,6 +64,9 @@ h4{
 .boton--primario{
     background-color: var(--negro);
 }
+.boton--secundario{
+    background-color: var(--primario);
+}
 @media (min-width: 768px){
     .boton{
         display: inline-block;
@@ -131,4 +134,24 @@ h4{
 .entrada-imagen img{
     width: 100%;
     max-width: 100%;
+}
+/**SIDEBAR**/
+.widget-cursos{
+    list-style: none;
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.widget-cursos:last-child{
+    border: none;
+}
+.widget-curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+.widget-curso-info{
+    font-weight: normal;
+}
+.widget-curso__label,
+.widget-curso-info{
+    font-size: 2rem;
 }
