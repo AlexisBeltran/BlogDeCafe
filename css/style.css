@@ -20,8 +20,7 @@ body{
 }
 /** GLOABLES **/
 .contenedor{
-    max-width: 120rem;
-    width: 90%;
+    width: min(90%, 120rem);
     margin: 0 auto;
 }
 a{
@@ -154,4 +153,10 @@ h4{
 .widget-curso__label,
 .widget-curso-info{
     font-size: 2rem;
+}
+/**FOOTER**/
+.footer{
+    background-color: var(--negro);
+    padding: 3rem;
+    margin-top: 4rem;
 }
