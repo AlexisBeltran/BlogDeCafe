@@ -59,6 +59,7 @@ h4{
     text-transform: uppercase;
     margin-bottom: 2rem;
     font-size: 1.3rem;
+    border: none;
 } 
 .boton--primario{
     background-color: var(--negro);
@@ -70,6 +71,9 @@ h4{
     .boton{
         display: inline-block;
     }
+}
+.boton:hover{
+    cursor: pointer;
 }
 .adaptar-imagen{
     width: 100%;
@@ -96,7 +100,7 @@ h4{
         justify-content: space-between;
         align-items: center;
     }
-    .navegacion {
+    .navegacion{
         display: flex;
         gap: 2rem;
     }
@@ -205,4 +209,34 @@ h4{
 .curso__label,
 .curso__informacion{
     font-size: 2rem;
+}
+/** CONTACTO **/
+.contacto-bg{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5rem;
+}
+.formulario {
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 90%;
+    padding: 5rem;
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    
+}
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+}
+.input__field{
+    flex: 1;
+}
+.input__field--textarea{
+    height: 40rem;
 }
