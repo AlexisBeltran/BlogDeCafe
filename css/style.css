@@ -79,6 +79,7 @@ h4{
     width: 100%;
     max-width: 100%;
 }
+
 /** HEADER **/
 .header{
     background-image: url(../img/banner.jpg);
@@ -239,4 +240,22 @@ h4{
 }
 .input__field--textarea{
     height: 40rem;
+}
+.error{
+    background-color: rgb(185, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+.notificacion{
+    background-color: green;
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+.error-email{
+    color: red;
+    text-align: center;
 }
